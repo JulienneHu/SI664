@@ -150,13 +150,6 @@ img:hover {
 }
 
 
-.time {
-    padding-left: 10px;
-    padding-top: 10px;
-    width: 20px;
-    height: auto;
-}
-
 .mins {
     display: inline-block;
     font-family: "Bradley Hand", cursive, serif;
@@ -167,6 +160,8 @@ img:hover {
     color: #323232;
     position: relative;
     bottom: 5px;
+    margin-left: 10px;
+    line-height: 1.5;
 }
 
 .description {
@@ -194,6 +189,10 @@ img:hover {
     width: 470px;
     height: auto;
     margin: 10px
+}
+
+.gallery h2{
+    text-align: center;
 }
 
 /* Regular Icon */
