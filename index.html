@@ -6,7 +6,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVJT56TVPF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-VVJT56TVPF');
@@ -130,13 +134,38 @@
     <h2>Gallery</h2>
     <img src="images/brunch_bagel.webp" alt="Blueberry Bagel  in the brunch page"/>
     <img src="images/brunch_sandwich.jpeg" alt="Potato Cheese Sandwich in the brunch page"/>
-    <img src="images/dessert_cake.jpeg" alt="Fruit cake in the dessert page" />
-    <img src="images/dessert_scone.jpeg" alt="Cranberry Scone in the dessert page" />
+    <img src="images/dessert_cake.jpeg" alt="Fruit cake in the dessert page"/>
+    <img src="images/dessert_scone.jpeg" alt="Cranberry Scone in the dessert page"/>
     <img src="images/coffee_coldbrew.jpeg" alt="Cold Brew in the coffee page"/>
     <img src="images/coffee_mocha.jpeg" alt="Mocha in the coffee page"/>
     <img src="images/drinks_tea.jpeg" alt="Tea in the drinks page"/>
     <img src="images/drinks_sparkling.jpeg" alt="Sparkling in the drinks page"/>
 </div>
+
+<div id="Music">
+
+    <div id="Music-player">
+        <div class="Mucis-Program">
+            <img src="images/music.png" id="Mpicture" alt="music icon">
+            <audio id="play1">
+                <source src="music/3%20Droppin%20(Prod%20by%20dayever).mp3">
+            </audio>
+            <audio id="play2">
+                <source src="music/Untitled%20(demo).mp3">
+            </audio>
+            <audio id="play3">
+                <source src="music/Block.mp3">
+            </audio>
+            <i class="fa fa-pause fa-2x" aria-hidden="true" id="stop" onclick="pau()"></i>
+            <i class="fa fa-play fa-2x" aria-hidden="true" id="start" onclick="st()"></i>
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true" id="preMu" onclick="reduce()"></i>
+            <i class="fa fa-chevron-right fa-2x" aria-hidden="true" id="nextMu" onclick="add()"></i>
+            <i class="fa fa-volume-down fa-2x" aria-hidden="true" id="voiceMu"></i>
+            <input type="range" min="0" max="1" step="0.01" id="voice" onclick="myVolume()">
+        </div>
+    </div>
+</div>
+<script src="js/player.js"></script>
 
 <aside>
     <p>My favorite food and drinks!</p>
@@ -152,9 +181,7 @@
         <!--Solid Icon -->
         <span class="cloud fontawesomeicon"> Happy everyday!</span>
     </h3>
-
 </footer>
-
 
 </body>
 
