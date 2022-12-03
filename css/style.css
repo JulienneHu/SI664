@@ -16,23 +16,52 @@ body {
     gap: 20px;
 }
 
+.skip {
+    display: block;
+    width: fit-content;
+    margin: .2em auto;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    z-index: 100;
+    justify-self: left;
+}
+
+.skip a {
+    position: absolute;
+    color: black;
+    background-color: white;
+    top: -25px;
+    transition: top 1s ease-out;
+}
+
+.skip a:focus {
+    top: 0;
+}
+
+.skip span {
+    font-size: 18px;
+}
+
 header {
     background-color: #466995;
     border-bottom: 1px solid #466995;
     position: relative;
     text-align: center;
-    height: 40px;
+    height: 100px;
     grid-column: 1/span 1;
     grid-row: 1/span 1;
 }
 
-header span{
+header span {
     color: #FFFFFF;
     font-family: "Bradley Hand", cursive, Serif;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+    justify-self: center;
 }
 
 nav {
@@ -57,11 +86,6 @@ ul {
     display: inline-block;
 }
 
-.skip-to-main-content-link{
-    font-size: 18px;
-    font-family: "Bradley Hand", cursive, Serif;
-}
-
 main {
     grid-column: 1/span 1;
     grid-row: 3/span 8;
@@ -69,13 +93,13 @@ main {
     margin-top: 44px;
 }
 
-aside{
+aside {
     grid-column: 1/span 1;
     grid-row: 14/span 1;
     width: 100%;
 }
 
-aside p{
+aside p {
     font-family: "Bradley Hand", cursive, Serif;
     font-size: 28px;
     font-weight: 300;
@@ -183,7 +207,7 @@ img:hover {
     border-top: 1px solid #4a4a4a;
 }
 
-.gallery{
+.gallery {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
@@ -192,17 +216,17 @@ img:hover {
     grid-row: 11/span 1;
 }
 
-.gallery img{
+.gallery img {
     width: 470px;
     height: auto;
     margin: 10px
 }
 
-.gallery h2{
+.gallery h2 {
     text-align: center;
 }
 
-#Music{
+#Music {
     grid-column: 1/span 1;
     grid-row: 12/span 1;
 }
@@ -287,7 +311,7 @@ i {
     width: 100%;
     display: grid;
     grid: auto / auto auto;
-    grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
     grid-gap: 30px;
 }
 
@@ -405,7 +429,7 @@ i {
     40% {
         transform: translate(30px, 0) scale(.7);
         opacity: 1;
-        color:  #466995;
+        color: #466995;
     }
     60% {
         color: #87CEEB;
@@ -421,7 +445,7 @@ i {
 }
 
 /* Applies styles when Reduced Motion is enabled */
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-reduced-motion: reduce) {
     .box span {
         animation: none !important;
         transform: none !important;
@@ -439,17 +463,21 @@ i {
         gap: 20px;
     }
 
-    header{
+    header {
         grid-row: 1/ span 1;
         grid-column: 1/ span 2;
     }
 
-    nav{
+    .skip {
+        margin: .2em auto .2em 0;
+    }
+
+    nav {
         grid-row: 2/ span 1;
         grid-column: 1/ span 2;
     }
 
-    main{
+    main {
         grid-row: 3/ span 4;
         grid-column: 1/ span 2;
         display: grid;
@@ -459,28 +487,28 @@ i {
         margin-top: 44px;
     }
 
-    .gallery{
+    .gallery {
         grid-row: 7/ span 1;
         grid-column: 1/ span 2;
     }
 
-    #Music{
+    #Music {
         grid-row: 8/ span 1;
         grid-column: 1/ span 2;
     }
 
-    #Music #Music-player .Music-Program{
+    #Music #Music-player .Music-Program {
         margin-left: 20%;
     }
 
-    .card{
+    .card {
         grid-row: 9/ span 1;
         grid-column: 1/ span 2;
         padding: 30px 90px 90px 90px;
     }
 
     .card .row {
-        grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     }
 
     .card h2 {
@@ -491,24 +519,24 @@ i {
         width: 50%;
     }
 
-    aside{
+    aside {
         grid-row: 10/ span 1;
         grid-column: 1/ span 2;
     }
 
-    footer{
+    footer {
         grid-row: 11/ span 1;
         grid-column: 1/ span 2;
     }
 
-    .gallery img{
+    .gallery img {
         width: 300px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
 
-    .recipe{
+    .recipe {
         display: grid;
     }
 
