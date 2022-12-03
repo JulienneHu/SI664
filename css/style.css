@@ -32,6 +32,7 @@ header span{
     font-size: 36px;
     font-weight: 500;
     text-transform: uppercase;
+    text-align: center;
 }
 
 nav {
@@ -56,6 +57,11 @@ ul {
     display: inline-block;
 }
 
+.skip-to-main-content-link{
+    font-size: 18px;
+    font-family: "Bradley Hand", cursive, Serif;
+}
+
 main {
     grid-column: 1/span 1;
     grid-row: 3/span 8;
@@ -65,7 +71,7 @@ main {
 
 aside{
     grid-column: 1/span 1;
-    grid-row: 13/span 1;
+    grid-row: 14/span 1;
     width: 100%;
 }
 
@@ -85,7 +91,7 @@ footer {
     height: 80px;
     color: #466995;
     grid-column: 1/span 1;
-    grid-row: 14/span 1;
+    grid-row: 15/span 1;
 }
 
 footer h3 {
@@ -196,6 +202,167 @@ img:hover {
     text-align: center;
 }
 
+#Music{
+    grid-column: 1/span 1;
+    grid-row: 12/span 1;
+}
+
+#Music #Music-player .Music-Program {
+    width: 460px;
+    height: 280px;
+    margin-left: 4%;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+}
+
+#Music-player .Music-Program img {
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 190px;
+}
+
+#Music-player .Music-Program #stop {
+    margin-top: 50px;
+    margin-left: 218px;
+    display: none;
+    overflow: auto;
+}
+
+#Music-player .Music-Program #start {
+    margin-top: 50px;
+    margin-left: 218px;
+    display: block;
+    overflow: auto;
+}
+
+#Music-player .Music-Program #preMu {
+    margin-top: -30px;
+    margin-left: 60px;
+    float: left;
+}
+
+#Music-player .Music-Program #nextMu {
+    margin-left: 278px;
+    margin-top: -30px;
+    float: left;
+}
+
+#Music-player .Music-Program #voiceMu {
+    margin-left: 218px;
+    margin-top: 30px;
+    float: left;
+}
+
+#voice {
+    margin-left: 246px;
+    margin-top: -24px;
+    float: left;
+}
+
+i {
+    cursor: pointer;
+}
+
+.card {
+    width: 70%;
+    padding: 20px;
+    border: 6px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    position: relative;
+    grid-column: 1/span 1;
+    grid-row: 13/span 1;
+}
+
+.card h2 {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.card .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    grid-gap: 30px;
+}
+
+.card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.5s;
+}
+
+.card .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.card .row .form-group label {
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+}
+
+.row .col:nth-child(6) {
+    margin-top: 64px;
+}
+
+.card .row .form-group input:focus,
+.card .row .form-group textarea:focus {
+    border: 5px solid #ffffff;
+    transition: all 0.5s;
+}
+
+.card .row input[type="submit"] {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 45px;
+    transition: all 0.4s;
+}
+
+.card .row input[type="submit"]:hover {
+    border: 5px solid rgba(255, 255, 255, 1);
+    color: #ffffff;
+    transition: all 0.4s;
+}
+
 /* Regular Icon */
 .user::before {
     content: '\f007';
@@ -302,13 +469,35 @@ img:hover {
         grid-column: 1/ span 2;
     }
 
-    aside{
+    #Music #Music-player .Music-Program{
+        margin-left: 20%;
+    }
+
+    .card{
         grid-row: 9/ span 1;
+        grid-column: 1/ span 2;
+        padding: 30px 90px 90px 90px;
+    }
+
+    .card .row {
+        grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    }
+
+    .card h2 {
+        font-size: 60px;
+    }
+
+    .card .row input[type="submit"] {
+        width: 50%;
+    }
+
+    aside{
+        grid-row: 10/ span 1;
         grid-column: 1/ span 2;
     }
 
     footer{
-        grid-row: 10/ span 1;
+        grid-row: 11/ span 1;
         grid-column: 1/ span 2;
     }
 
@@ -324,68 +513,4 @@ img:hover {
     }
 
 }
-
-#Music{
-    grid-column: 1/span 1;
-    grid-row: 12/span 1;
-}
-
-#Music #Music-player .Mucis-Program {
-    width: 460px;
-    height: 280px;
-    margin-left: 50%;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 25px;
-}
-
-#Music-player .Mucis-Program img {
-    width: 80px;
-    height: 80px;
-    margin-top: 40px;
-    margin-left: 190px;
-}
-
-#Music-player .Mucis-Program #stop {
-    margin-top: 50px;
-    margin-left: 218px;
-    display: none;
-    overflow: auto;
-}
-
-#Music-player .Mucis-Program #start {
-    margin-top: 50px;
-    margin-left: 218px;
-    display: block;
-    overflow: auto;
-}
-
-#Music-player .Mucis-Program #preMu {
-    margin-top: -30px;
-    margin-left: 60px;
-    float: left;
-}
-
-#Music-player .Mucis-Program #nextMu {
-    margin-left: 278px;
-    margin-top: -30px;
-    float: left;
-}
-
-#Music-player .Mucis-Program #voiceMu {
-    margin-left: 218px;
-    margin-top: 30px;
-    float: left;
-}
-
-#voice {
-    margin-left: 246px;
-    margin-top: -24px;
-    float: left;
-}
-
-i {
-    cursor: pointer;
-}
-
 
