@@ -238,6 +238,7 @@ img:hover {
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
+    font-family: "Bradley Hand", cursive, Serif;
 }
 
 #Music-player .Music-Program img {
@@ -292,8 +293,8 @@ i {
 .card {
     width: 70%;
     padding: 20px;
-    border: 6px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+    border: 6px solid #466995;
+    box-shadow: 20px 20px 0 #466995;
     border-radius: 50px;
     position: relative;
     grid-column: 1/span 1;
@@ -301,7 +302,7 @@ i {
 }
 
 .card h2 {
-    color: rgba(0, 0, 0, 0.3);
+    color: #466995;
     font-size: 34px;
     text-transform: uppercase;
 }
@@ -337,10 +338,11 @@ i {
     background: transparent;
     outline: none;
     font-size: 24px;
+    font-weight: 600;
     padding: 10px 0 10px 20px;
-    border: 5px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-    color: #ffffff;
+    border: 5px solid #466995;;
+    box-shadow: 10px 10px 0 #466995;;
+    color: #FFFFFF;
     border-radius: 50px;
 }
 
@@ -348,6 +350,8 @@ i {
     line-height: 40px;
     color: #ffffff;
     font-size: 24px;
+    font-weight: 700;
+    font-family: "Bradley Hand", cursive, Serif;
     margin: 0 0 0 30px;
     display: block;
     pointer-events: none;
@@ -364,8 +368,8 @@ i {
 }
 
 .card .row input[type="submit"] {
-    border: 5px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    border: 5px solid #466995;;
+    box-shadow: 10px 10px 0 #466995;;
     padding: 10px;
     height: 100%;
     width: 100%;
