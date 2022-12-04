@@ -347,6 +347,7 @@ i {
 }
 
 .card .row .form-group label {
+    color: #466995;
     line-height: 40px;
     font-size: 24px;
     font-weight: 700;
