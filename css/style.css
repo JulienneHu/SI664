@@ -16,22 +16,17 @@ body {
     gap: 20px;
 }
 
-.skip {
+.skip a {
     display: block;
     width: fit-content;
     margin: .2em auto;
-    border: 1.5px solid white;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    z-index: 100;
-    justify-self: ;
-}
-
-
-.skip a {
+    /*border: 0.5px solid white;*/
+    border-radius: 3px;
     position: absolute;
+    text-decoration: none;
+    justify-items: left;
     top: -250px;
+    font-size: 16px;
     /* z-index: 1; */
     color: rgb(255, 255, 255);
 
