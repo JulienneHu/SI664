@@ -25,29 +25,13 @@ body {
     text-decoration: none;
     color: white;
     z-index: 100;
-    justify-self: center;
+    justify-self: ;
 }
 
-/*.skip a {*/
-/*    position: absolute;*/
-/*    color: black;*/
-/*    background-color: white;*/
-/*    top: -25px;*/
-/*    left: -500px;*/
-/*    transition: top 1s ease-out;*/
-/*}*/
-
-/*.skip a:focus {*/
-/*    top: 0;*/
-/*}*/
-
-/*.skip span {*/
-/*    font-size: 18px;*/
-/*}*/
 
 .skip a {
     position: absolute;
-    top: -40px;
+    top: -250px;
     /* z-index: 1; */
     color: rgb(255, 255, 255);
 
@@ -487,11 +471,6 @@ i {
         grid-row: 1/ span 1;
         grid-column: 1/ span 2;
     }
-
-    /*.skip {*/
-    /*    margin: .2em auto .2em 0;*/
-    /*    justify-self: left;*/
-    /*}*/
 
     nav {
         grid-row: 2/ span 1;
