@@ -16,6 +16,7 @@ body {
     gap: 20px;
 }
 
+
 .skip a {
     display: block;
     width: fit-content;
@@ -34,7 +35,8 @@ body {
 
 .skip a:focus {
     position: absolute;
-    top: 0;
+    top: 5px;
+    left: 5px;
     color: rgb(255, 255, 255);
 
 }
@@ -466,6 +468,11 @@ i {
         grid-row: 1/ span 1;
         grid-column: 1/ span 2;
     }
+
+    /*.skip {*/
+    /*    margin: .2em auto .2em 0;*/
+    /*    justify-self: left;*/
+    /*}*/
 
     nav {
         grid-row: 2/ span 1;
