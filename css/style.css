@@ -25,23 +25,39 @@ body {
     text-decoration: none;
     color: white;
     z-index: 100;
-    justify-self: left;
+    justify-self: center;
 }
+
+/*.skip a {*/
+/*    position: absolute;*/
+/*    color: black;*/
+/*    background-color: white;*/
+/*    top: -25px;*/
+/*    left: -500px;*/
+/*    transition: top 1s ease-out;*/
+/*}*/
+
+/*.skip a:focus {*/
+/*    top: 0;*/
+/*}*/
+
+/*.skip span {*/
+/*    font-size: 18px;*/
+/*}*/
 
 .skip a {
     position: absolute;
-    color: black;
-    background-color: white;
-    top: -25px;
-    transition: top 1s ease-out;
+    top: -40px;
+    /* z-index: 1; */
+    color: rgb(255, 255, 255);
+
 }
 
 .skip a:focus {
+    position: absolute;
     top: 0;
-}
+    color: rgb(255, 255, 255);
 
-.skip span {
-    font-size: 18px;
 }
 
 header {
@@ -472,9 +488,10 @@ i {
         grid-column: 1/ span 2;
     }
 
-    .skip {
-        margin: .2em auto .2em 0;
-    }
+    /*.skip {*/
+    /*    margin: .2em auto .2em 0;*/
+    /*    justify-self: left;*/
+    /*}*/
 
     nav {
         grid-row: 2/ span 1;
